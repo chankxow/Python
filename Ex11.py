@@ -1,14 +1,7 @@
-import msvcrt
+Baht = int(input("กรอกจำนวนเงินบาท : "))
 
-def input_between_strings (s, t):
-    res = ''
-    while True:
-        print(s, res, t, sep = '', end = ' \r')
-        curr = msvcrt.getch()[0]
-        if curr == 13:
-            print()
-            return res
-        elif curr == 8:
-            res = res[:-1]
-        else:
-            res += chr(curr)
+USD = Baht/32.5
+if Baht > 0 :
+    print(f"คุณมีเงินจำนวน {Bath} บาท")
+    print(f"คุณสามารแลกเงินดอลลาร์ได้ในจำนาน {USD} เหรียญ ")
+    
